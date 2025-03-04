@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SeeQRs | Explore Like a Local</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Tail for the left-aligned (blue) chat bubble */
+    .chat-bubble-left {
+      position: relative;
+    }
+    .chat-bubble-left::after {
+      content: "";
+      position: absolute;
+      bottom: 5px;
+      left: -10px;
+      border-width: 8px;
+      border-style: solid;
+      border-color: transparent #3B82F6 #3B82F6 transparent;
+    }
+
+    /* Tail for the right-aligned (gray) chat bubble */
+    .chat-bubble-right {
+      position: relative;
+    }
+    .chat-bubble-right::after {
+      content: "";
+      position: absolute;
+      bottom: 5px;
+      right: -10px;
+      border-width: 8px;
+      border-style: solid;
+      border-color: transparent transparent #E5E7EB #E5E7EB;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+  <section class="relative bg-cover bg-center h-[80vh] text-white flex items-center justify-center" style="background-image: url('https://via.placeholder.com/1200x600');">
+    <div class="bg-black bg-opacity-50 p-8 rounded-xl text-center">
+      <div class="flex flex-col items-start space-y-3 mb-6">
+        <h1 class="text-4xl font-bold mb-4">Are you in a SeeQRs Zone? </h1>
+
+        <!-- Left-aligned blue chat bubble with tail -->
+        <div class="relative bg-blue-500 text-white p-3 rounded-lg max-w-xs shadow-md self-start text-left chat-bubble-left">
+          <p class="text-lg">Explore like a Local! Find the town’s best spots in seconds.</p>
+          <p class="text-lg"> No downloads.</p>
+          <p class="text-lg"> No sign-ups.</p>
+          <p class="text-lg"> No scrolling through reviews.</p>
+        </div>
+
+        <!-- Right-aligned gray chat bubble with tail -->
+        <div class="relative bg-gray-200 text-gray-800 p-3 rounded-lg max-w-xs shadow-md self-end text-left chat-bubble-right">
+          <p class="text-lg">Welcome to our virtual bustling local market, where shopkeepers call out their daily specials and cafés invite you in with fresh-brewed aromas. That’s the experience SeeQRs brings to your phone!</p>
+        </div>
+      </div>
+      <br>
+      <a href="#how-it-works" class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg text-lg font-semibold">Learn How It Works</a>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="py-16 text-center">
+    <h2 class="text-3xl font-bold mb-10">How it works:</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 max-w-6xl mx-auto">
+      <div class="bg-gray-100 p-6 rounded-xl shadow-lg">
+        <h3 class="text-2xl font-semibold mb-2">🔎 Scan a SeeQR</h3>
+        <p>Spot our QR codes around town and scan with your phone.</p>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-xl shadow-lg">
+        <h3 class="text-2xl font-semibold mb-2">✨ Discover Instantly</h3>
+        <p>Find cozy cafés, quirky shops, and local gems within 30 seconds. All within walking distance.</p>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-xl shadow-lg">
+        <h3 class="text-2xl font-semibold mb-2">📣 Hear Live from Locals</h3>
+        <p>Get live offers, events, and welcoming messages — just like a bustling local market.</p>
+      </div>
+    </div>
+    </div>
+    <br><br>
+    <a href="#our-mission" class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg text-lg font-semibold">Our mission statements</a>
+    </div>
+  </section>
+
+  <section id="our-mission" class="bg-gray-50 py-16 text-center">
+    <h2 class="text-3xl font-bold mb-6">Our mission:</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-8 max-w-5xl mx-auto">
+      <div class="bg-teal-100 p-6 rounded-xl shadow-md">
+        <p class="text-lg">✅ Real-time local info — not just algorithms</p>
+      </div>
+      <div class="bg-teal-100 p-6 rounded-xl shadow-md">
+        <p class="text-lg">✅ Quick, hassle-free, and tourist-friendly</p>
+      </div>
+      <div class="bg-teal-100 p-6 rounded-xl shadow-md">
+        <p class="text-lg">✅ Support local businesses and find hidden gems</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-blue-900 text-white py-16 text-center">
+    <h2 class="text-3xl font-bold mb-6">Your next great experience is just a scan away! 🎉🥐🎶</h2>
+    <a href="#" class="bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-4 rounded-lg text-lg font-semibold">View Sample SEEQRS Zone</a>
+  </section>
+</body>
+</html>
